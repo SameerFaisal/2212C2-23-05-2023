@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("img").animate({left: '250px'},5000);
+        $("img").animate({opacity:'0.5'},2000);
+        $("img").animate({height:'300px'},2000);
+        $("img").animate({width:'300px'},2000);
+
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<br>
+
+<img  height="100" width="100" src="https://media.istockphoto.com/id/184944186/photo/quaid-e-azam.jpg?s=612x612&w=0&k=20&c=7mRHDKfBWbpmiTto_w_oMm4EeboU9tEDO_JXke01P5I=" alt="">
+
+
+
+</body>
+</html>
+
+
+$("div").animate({left: '250px'},5000);
+$("div").animate({opacity:'0.5'},2000);
+$("div").animate({height:'300px'},2000);
+$("div").animate({width:'300px'},2000); -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(".zi").click(function(){
+          $("div").animate({height: '+=150px',width:'+=150px'});
+
+  });
+});
+
+$(document).ready(function(){
+  $(".zo").click(function(){
+          $("div").animate({height: '-=150px',width:'-=150px'});
+
+  });
+});
+</script> 
+</head>
+<body>
+<button class="zi">Zoom In</button>
+<button class="zo">Zoom Out</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
